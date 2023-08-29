@@ -8,14 +8,24 @@
         <title>Aplicação</title>
     </head>
     <body>
-        <h1>Olá Mundo!!!</h1>
-        <% out.print("ola scriptlet");%>
-        <br>
+      
 
         <% 
+        int [] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for(int n : nums){
+            out.print(n + "<br/>");
+        }
+
+        out.print("<br/>");
+        for(int cont = 0 ; cont <10 ; cont++){
+            out.print(nums[cont]+"<br />");
+
+
+        }
+
         
-        String nome = request.getParameter("nome");
-        out.print("ola " + nome);
+        
+    
         %>
 
 
